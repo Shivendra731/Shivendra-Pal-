@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shivendra Pal - School Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #222;
+      overflow-x: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.4), transparent 70%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.3), transparent 60%);
+      z-index: 0;
+      animation: slowPulse 12s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes slowPulse {
+      0%, 100% {
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 60px 40px;
+      border-radius: 20px;
+      max-width: 480px;
+      box-shadow: 0 15px 30px rgba(102, 166, 255, 0.3);
+      user-select: none;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 3.2rem;
+      margin-bottom: 0.3em;
+      color: #155bc4;
+      letter-spacing: 2px;
+    }
+
+    .details {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #3a4d8f;
+      margin-bottom: 8px;
+    }
+
+    .school-name {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #5877b5;
+      margin-bottom: 20px;
+      letter-spacing: 1.2px;
+    }
+
+    .footer-text {
+      font-size: 1rem;
+      color: #4979c5;
+      opacity: 0.8;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 40px 25px;
+        max-width: 90vw;
+      }
+      h1 {
+        font-size: 2.4rem;
+      }
+      .details {
+        font-size: 1.2rem;
+      }
+      .school-name {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-label="School project information">
+    <h1>Shivendra Pal</h1>
+    <div class="details">Class 12th A2</div>
+    <div class="school-name">SKD Academy</div>
+    <div class="footer-text">Welcome to my school project website!</div>
+  </main>
+</body>
+</html>
+
